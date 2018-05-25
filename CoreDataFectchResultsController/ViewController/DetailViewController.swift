@@ -60,7 +60,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePicker
                 // NewValue
                 entity = Entity(context: AppDelegate.context)
             }
-            entity?.age = Int32(ageNewValue ?? 0)
+            entity?.age = Int32(ageNewValue!)
             entity?.name = nameTextField.text
             entity?.photo = imageView.image
             DataService.share.saveToCoreData()

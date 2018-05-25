@@ -37,7 +37,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Oti-Jj-xgN">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Jca-V0-GUu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Jca-V0-GUu">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" identifier="add" id="wva-zC-ghf"/>
                             </connections>
@@ -143,7 +143,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Nwr-QC-9Uc">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="ceE-OY-6f5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ceE-OY-6f5">
                             <connections>
                                 <segue destination="JCp-EO-50e" kind="unwind" unwindAction="unwindFor:" id="Zn5-D1-neK"/>
                             </connections>
