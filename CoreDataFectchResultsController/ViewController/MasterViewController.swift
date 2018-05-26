@@ -43,7 +43,11 @@ class MasterViewController: UITableViewController {
         configureCell(cell, withEntity: entity)
         return cell
     }
-    
+    func configureCell(_ cell: UITableViewCell, withEntity entity: Entity) {
+        cell.textLabel!.text = entity.name
+        cell.detailTextLabel?.text = String(entity.age)
+        cell.imageView?.image = entity.photo as? UIImage
+    }
     
     
     // Override to support conditional editing of the table view.
@@ -62,11 +66,7 @@ class MasterViewController: UITableViewController {
         }    
     }
     
-    func configureCell(_ cell: UITableViewCell, withEntity entity: Entity) {
-        cell.textLabel!.text = entity.name
-        cell.detailTextLabel?.text = String(entity.age)
-        cell.imageView?.image = entity.photo as? UIImage
-    }
+   
     @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
         
     }
